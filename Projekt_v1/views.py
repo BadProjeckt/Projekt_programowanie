@@ -14,3 +14,6 @@ def forum_page(request):
 def login_page(request):
     return render(request, 'forum.html',{'name': 'login'})
 
+def signup_page(request):
+    return render(request, 'signup.html',{'name': 'signup'})
+
