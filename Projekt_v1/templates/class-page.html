@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Screen</title>
+    <link
+      rel="stylesheet"
+      href="{%static 'styles/class-page/class-page-styles.css'%}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid" id="navbarContainer">
+        <div class="navbarDiv">
+          <ul id="leftPart">
+            <li>
+              <a
+                ><img
+                  src="{%static 'imgs&icons/class-page/icons8-home.svg'%}"
+                  alt=""
+              /></a>
+            </li>
+            <li><a>NEWS</a></li>
+            <li><a>FORUM</a></li>
+          </ul>
+        </div>
+        <div class="navbarDiv">
+          <div class="container-fluid inputWrapper">
+            <img
+              src="{%static 'imgs&icons/class-page/icons8-search.svg'%}"
+              alt=""
+              class="searchIcon"
+            />
+            <input type="text" id="mainInput" placeholder="Type something..." />
+            <img
+              src="{%static 'imgs&icons/class-page/icons8-expand-arrow-48.png'%}"
+              alt=""
+              id="expandArrow"
+            />
+          </div>
+        </div>
+        <div class="navbarDiv">
+          <button id="loginSignup">LOGIN/SIGN UP</button>
+        </div>
+      </div>
+    </nav>
+    <div class="container dropDown">
+      <div class="row">
+        <div class="col-4 tagCol">
+          <p class="tagLabel">Type of Specialist</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="psychotherapist"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Psychotherapist
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="psychiatrist"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Psychiatrist
+            </label>
+          </div>
+          <p class="tagLabel mt-3">Practice</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="private"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Private
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="public"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Public
+            </label>
+          </div>
+        </div>
+        <div class="col-4 tagCol">
+          <p class="tagLabel">Specialization <br />in</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="depression"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Depression
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="adhd"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              ADHD
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="bipolar"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Bi-polar disorder
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="anxiety"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Anxiety Attacks
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="trauma"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Trauma
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="ptsd"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              PTSD
+            </label>
+          </div>
+        </div>
+        <div class="col-4 tagCol">
+          <p class="tagLabel pb-4">City</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="warsaw"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Warsaw
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="krakow"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Krakow
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="lodz"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Lodz
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="poznan"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Poznan
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="lublin"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Lublin
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="gdansk"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Gdansk
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="whoAreYou">
+      <h1>WHO ARE YOU?</h1>
+    </div>
+    <div class="container-fluid" id="mainDiv">
+      <div class="row">
+        <div class="col-4 chooseClass">
+          <h2>I AM A PATIENT</h2>
+          <a
+            ><img
+              src="{%static 'imgs&icons/class-page/patient2.jpg'%}"
+              alt="Patient"
+              class="img-fluid chooseClassImg"
+          /></a>
+        </div>
+        <div class="col-4 chooseClass">
+          <h2>I AM A DOCTOR</h2>
+          <a
+            ><img
+              src="{%static 'imgs&icons/class-page/doctor.jpg'%}"
+              alt="Doctor"
+              class="img-fluid chooseClassImg"
+          /></a>
+        </div>
+        <div class="col-4 chooseClass">
+          <h2>I AM A CLINIC</h2>
+          <a
+            ><img
+              src="{%static 'imgs&icons/class-page/clinic.jpg'%}"
+              alt="Clinic"
+              class="img-fluid chooseClassImg"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="{%static 'scripts/class-page/class-page-app.js'%}"></script>
+  </body>
+</html>
