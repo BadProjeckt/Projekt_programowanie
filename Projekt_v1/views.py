@@ -17,3 +17,6 @@ def login_page(request):
 def signup_page(request):
     return render(request, 'signup.html',{'name': 'signup'})
 
+def class_page(request):
+    return render(request, 'class-page.html',{'name': 'class'})
+

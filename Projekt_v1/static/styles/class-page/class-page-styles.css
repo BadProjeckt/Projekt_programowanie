@@ -4054,6 +4054,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  box-shadow: 3px 3px 20px black;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -11546,4 +11547,8 @@ a:hover {
 
 .tagLabel {
   border-bottom: 4px solid green;
+}
+
+.expandArrowWider {
+  margin-left: 190px;
 }

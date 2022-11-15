@@ -7,4 +7,5 @@ urlpatterns = [
     path('forum/', views.forum_page),
     path('login/', views.login_page),
     path('signup/', views.signup_page),
+    path('classpage/', views.class_page),
 ]

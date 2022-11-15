@@ -5,4 +5,5 @@ const searchIcon = document.querySelector('.searchIcon')
 expandArrow.addEventListener('click', () => {
     inputWrapper.classList.toggle('inputWrapperWider');
     dropDown.classList.toggle('displayFlex');
+    expandArrow.classList.toggle('expandArrowWider')
 })
