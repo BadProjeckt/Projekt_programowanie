@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Sign Up</title>
+    <link
+      rel="stylesheet"
+      href="{%static 'styles/patient-sign-up-page/patient-sign-up-page.css'%}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid" id="navbarContainer">
+        <div class="navbarDiv">
+          <ul id="leftPart">
+            <li>
+              <a
+                ><img
+                  src="{%static 'imgs&icons/patient-sign-up-page/icons8-home.svg'%}"
+                  alt=""
+              /></a>
+            </li>
+            <li><a>NEWS</a></li>
+            <li><a>FORUM</a></li>
+          </ul>
+        </div>
+        <div class="navbarDiv">
+          <div class="container-fluid inputWrapper">
+            <input type="text" id="mainInput" placeholder="Type something..." />
+            <img
+              src="{%static 'imgs&icons/patient-sign-up-page/icons8-search.svg'%}"
+              alt=""
+              class="searchIcon"
+            />
+          </div>
+        </div>
+        <div class="navbarDiv">
+          <button id="loginSignup">LOGIN/SIGN UP</button>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-4 container-fluid imgDiv">
+        <img
+          src="{%static 'imgs&icons/patient-sign-up-page/flowers.jpg'%}"
+          alt=""
+          class="formImg"
+        />
+      </div>
+      <div class="col-8 container-fluid formDiv">
+        <h1 class="topHeading">Create an account</h1>
+        <form>
+          <div class="form-group">
+            <label class="formLabel" for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="surname">Surname</label>
+            <input
+              type="text"
+              class="form-control"
+              id="surname"
+              placeholder="Enter your surname"
+            />
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="date-of-birth">Date of birth</label>
+            <div class="dateContainer">
+              <input
+                type="number"
+                class="form-control-date text-center"
+                id="day"
+                placeholder="DD"
+              />
+              <input
+                type="number"
+                class="form-control-date text-center"
+                id="month"
+                placeholder="MM"
+              />
+              <input
+                type="number"
+                class="form-control-date text-center"
+                id="year"
+                placeholder="YYYY"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="surname">Sex assigned at birth</label>
+            <div class="radioContainer">
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="male"
+                  value="male"
+                />
+                <label class="form-check-label" for="inlineRadio1">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="male"
+                  value="male"
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  >Female</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="phoneNumber">Phone number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="phoneNumber"
+              placeholder="Enter your phone number"
+            />
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email adress"
+            />
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="email">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Enter your password"
+            />
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="confPassword">Confirm Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="confPassword"
+              placeholder="Enter your password again"
+            />
+            <small id="passwordHelp" class="form-text"
+              >Password must contain at least: <br /><br />1 special character
+              (@#$%^&)<br />1 number (0123456789)<br />1 capital character<br />1
+              small character</small
+            >
+          </div>
+          <div class="btnContainer">
+            <button class="signUpBtn">SIGN UP</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="{%static 'scripts/patient-sign-up-page/patient-sign-up-page.js'%}"></script>
+  </body>
+</html>

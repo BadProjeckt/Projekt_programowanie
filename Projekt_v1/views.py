@@ -20,3 +20,6 @@ def signup_page(request):
 def class_page(request):
     return render(request, 'class-page.html',{'name': 'class'})
 
+def patient_sign_up_page(request):
+    return render(request, 'patient-sign-up-page.html',{'name': 'patient'})
+

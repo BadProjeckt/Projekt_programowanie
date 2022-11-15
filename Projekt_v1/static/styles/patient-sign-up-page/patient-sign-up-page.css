@@ -348,6 +348,8 @@ label {
 
 button {
   border-radius: 0;
+  
+  font-size: 600;
 }
 
 button:focus:not(:focus-visible) {
@@ -11377,6 +11379,7 @@ z-index: 1;
 body {
   font-family: 'Quicksand', sans-serif;
   color: #FFFFFF;
+  font-weight: 600;
 }
 
 a {
@@ -11394,6 +11397,7 @@ ul, li {
   height: 5rem;
   background-color: #343434;
   padding: 0;
+  font-size: 600;
 }
 
 .navbarDiv, #leftPart {
@@ -11431,13 +11435,15 @@ ul, li {
 }
 
 .inputWrapper {
+  display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   justify-items: center;
   background-color: black;
-  height: 100%;
+  height: 80%;
   border-radius: 20px;
+  width: 45rem;
 }
 
 .inputWrapper img {
@@ -11449,23 +11455,6 @@ ul, li {
   outline: none;
   border: none;
   color: white;
-  margin-top: 1.5rem;
-}
-
-/* .inputWrapper:hover {
-  width: 30rem;
-} */
-
-.inputWrapperWider {
-  width: 30rem;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-.inputWrapperWiderClick {
-  width: 30rem;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
 }
 
 #loginSignup {
@@ -11476,90 +11465,137 @@ ul, li {
   width: 12rem;
   margin-left: 3rem;
   transition: 0.2s;
+  font-weight: 600;
 }
 
 #loginSignup:hover {
   background-color: #507A5C;
 }
 
-#whoAreYou {
-  display: flex;
-  height: 8rem;
-  background-color: #364A3C;
-  justify-content: center;
-  align-items: center;
-}
-
-#mainDiv {
-  height: 100vh;
-  background-color: #405546;
-}
-
-.chooseClass {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.chooseClass h2 {
-  margin-top: 5rem;
-  margin-bottom: 4rem;
-}
-
-.chooseClassImg {
-  height: 30rem;
-  object-fit: cover;
-  border-radius: 15%;
-  border: 0px solid #29342C;
-  transition: 0.2s;
-}
-
-.chooseClassImg:hover{
-  border: 5px solid #29342C;
-  -webkit-box-shadow: 0 0 10px #67746B;
-          box-shadow: 0 0 10px #67746B;
-}
 
 a:hover {
     color: #B9B9B9;
-}
-
-.dropDown {
-  display: flex;
-  background-color: black;
-  justify-content: center;
-  width: 40rem;
-  height: 18.5rem;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  border-radius: 20px;
-  display: none;
 }
 
 .displayFlex {
   display: flex;
 }
 
-.tagCol {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  margin-top: 10px;
-  padding: 0 40px;
+.imgDiv {
+    margin: 0;
+    padding: 0;
+    filter: brightness(65%)
 }
 
-.tagLabel {
-  border-bottom: 4px solid green;
+.formImg {
+    height: 160vh;
+    width: 100%;
+    object-fit: cover;
 }
 
-.expandArrowWider {
-  margin-left: 190px;
+.formDiv {
+    margin: 0;
+    height: 160vh;
+    background-color: #405546;
+    padding: 3rem 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
-.expandArrowWiderClick {
-  margin-left: 190px;
-  transform: rotate(180deg);
+.topHeading {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.formLabel {
+    font-size: 20px;
+    margin-left: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+    display: block;
+}
+
+.form-control {
+    width: 70%;
+    background-color: black;
+    border: none;
+    height: 3.8rem;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px -2px black;
+}
+
+.form-control-date {
+    width: 30%;
+    background-color: black;
+    border: none;
+    height: 3.8rem;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px -2px black;
+}
+
+.dateContainer {
+    width: 70%;
+    height: 3.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.radioContainer {
+    margin-top: 1.5rem;
+    width: 70%;
+    height: 3.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.form-control:focus{
+    background-color: black;
+    color: white;
+}
+
+.form-control-date:focus{
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+#passwordHelp {
+    color: #CACACA;
+}
+
+.btnContainer {
+    margin: 2.2rem 0;
+    width: 70%;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.signUpBtn {
+    display: block;
+    margin: 0 auto;
+    width: 45%;
+    height: 4.2rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px -2px black;
+    transition: 0.2s;
+}
+
+.signUpBtn:hover {
+    background-color: #CACACA;
+    box-shadow: 0 2px 15px -2px #929292;
 }
