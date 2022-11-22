@@ -11556,9 +11556,8 @@ a:hover {
 .radioContainer {
     margin-top: 1.5rem;
     width: 70%;
-    height: 3.8rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     margin-top: 2rem;
 }
@@ -11614,5 +11613,11 @@ a:hover {
 }
 
 .form-check {
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
   font-weight: 400;
+}
+
+.form-check:last-of-type {
+  margin-bottom: 1.5rem;
 }

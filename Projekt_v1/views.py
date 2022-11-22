@@ -23,3 +23,9 @@ def class_page(request):
 def patient_sign_up_page(request):
     return render(request, 'patient-sign-up-page.html',{'name': 'patient'})
 
+def doctor_sign_up_page(request):
+    return render(request, 'doctor-sign-up-page.html',{'name': 'doctor'})
+
+def clinic_sign_up_page(request):
+    return render(request, 'clinic-sign-up-page.html',{'name': 'clinic'})
+

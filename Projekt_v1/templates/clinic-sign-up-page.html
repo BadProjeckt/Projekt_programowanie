@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Patient Sign Up</title>
+    <title>Clinic Sign Up</title>
     <link
       rel="stylesheet"
-      href="{%static 'styles/patient-sign-up-page/patient-sign-up-page.css'%}"
+      href="{%static 'styles/clinic-sign-up-page/clinic-sign-up-page.css'%}"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap"
@@ -23,7 +23,7 @@
             <li>
               <a
                 ><img
-                  src="{%static 'imgs&icons/patient-sign-up-page/icons8-home.svg'%}"
+                  src="{%static 'imgs&icons/clinic-sign-up-page/icons8-home.svg'%}"
                   alt=""
               /></a>
             </li>
@@ -35,7 +35,7 @@
           <div class="container-fluid inputWrapper">
             <input type="text" id="mainInput" placeholder="Type something..." />
             <img
-              src="{%static 'imgs&icons/patient-sign-up-page/icons8-search.svg'%}"
+              src="{%static 'imgs&icons/clinic-sign-up-page/icons8-search.svg'%}"
               alt=""
               class="searchIcon"
             />
@@ -49,7 +49,7 @@
     <div class="row">
       <div class="col-4 container-fluid imgDiv">
         <img
-          src="{%static 'imgs&icons/patient-sign-up-page/flowers.jpg'%}"
+          src="{%static 'imgs&icons/clinic-sign-up-page/flowers.jpg'%}"
           alt=""
           class="formImg"
         />
@@ -58,7 +58,7 @@
         <h1 class="topHeading">Create an account</h1>
         <form>
           <div class="form-group">
-            <label class="formLabel" for="name">Name</label>
+            <label class="formLabel" for="name">Name of the company</label>
             <input
               type="text"
               class="form-control"
@@ -67,60 +67,76 @@
             />
           </div>
           <div class="form-group">
-            <label class="formLabel" for="surname">Surname</label>
+            <label class="formLabel" for="licenseNumber">License number</label>
             <input
               type="text"
               class="form-control"
-              id="surname"
-              placeholder="Enter your surname"
+              id="licenseNumber"
+              placeholder="Enter your license number"
             />
           </div>
+          <div class="form-group"></div>
           <div class="form-group">
-            <label class="formLabel" for="date-of-birth">Date of birth</label>
-            <div class="dateContainer">
-              <input
-                type="number"
-                class="form-control-date text-center"
-                id="day"
-                placeholder="DD"
-              />
-              <input
-                type="number"
-                class="form-control-date text-center"
-                id="month"
-                placeholder="MM"
-              />
-              <input
-                type="number"
-                class="form-control-date text-center"
-                id="year"
-                placeholder="YYYY"
-              />
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="formLabel" for="surname">Sex assigned at birth</label>
+            <label class="formLabel" for="surname">Services</label>
             <div class="radioContainer">
-              <div class="form-check form-check-inline">
+              <div class="form-check form-check">
                 <input
                   class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="male"
-                  value="male"
+                  type="checkbox"
+                  name="psychology"
+                  id="psychology"
+                  value="psychology"
                 />
-                <label class="form-check-label" for="inlineRadio1">Male</label>
+                <label class="form-check-label" for="psychology"
+                  >Psychology</label
+                >
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check form-check">
                 <input
                   class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="female"
-                  value="female"
+                  type="checkbox"
+                  name="psychiatry"
+                  id="psychiatry"
+                  value="psychiatry"
                 />
-                <label class="form-check-label" for="inlineRadio2"
-                  >Female</label
+                <label class="form-check-label" for="psychiatry"
+                  >Psychiatry</label
+                >
+              </div>
+              <div class="form-check form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="sexuology"
+                  id="sexuology"
+                  value="sexuology"
+                />
+                <label class="form-check-label" for="sexuology"
+                  >Sexuology</label
+                >
+              </div>
+              <div class="form-check form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="traumatology"
+                  id="traumatology"
+                  value="traumatology"
+                />
+                <label class="form-check-label" for="traumatology"
+                  >Traumatology</label
+                >
+              </div>
+              <div class="form-check form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="forChildren"
+                  id="forChildren"
+                  value="forChildren"
+                />
+                <label class="form-check-label" for="forChildren"
+                  >For children</label
                 >
               </div>
             </div>
@@ -174,6 +190,6 @@
         </form>
       </div>
     </div>
-    <script src="{%static 'scripts/patient-sign-up-page/patient-sign-up-page.js'%}"></script>
+    <script src="{%static 'scripts/clinic-sign-up-page/clinic-sign-up-page.js'%}"></script>
   </body>
 </html>

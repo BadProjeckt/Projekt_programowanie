@@ -11545,12 +11545,14 @@ a:hover {
 }
 
 .dateContainer {
-    width: 70%;
+    background-color: black;
+    width: 30%;
     height: 3.8rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 2rem;
+    border-radius: 20px;
 }
 
 .radioContainer {
@@ -11613,6 +11615,8 @@ a:hover {
   color: red;
 }
 
-.form-check {
-  font-weight: 400;
+#expandArrow {
+  filter: invert(90%) sepia(0%) saturate(0%) hue-rotate(214deg) brightness(94%) contrast(92%);
+  object-fit: cover;
+  width: 2rem;
 }
