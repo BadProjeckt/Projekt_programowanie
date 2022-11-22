@@ -11621,3 +11621,7 @@ a:hover {
 .form-check:last-of-type {
   margin-bottom: 1.5rem;
 }
+
+#buttonForm {
+  height: 100%;
+}

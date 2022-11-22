@@ -11458,7 +11458,7 @@ ul, li {
   color: white;
 }
 
-#loginSignup {
+#signUp {
   height: 100%;
   border: none;
   background-color: #405546;
@@ -11469,7 +11469,7 @@ ul, li {
   font-weight: 600;
 }
 
-#loginSignup:hover {
+#signUp:hover {
   background-color: #507A5C;
 }
 
@@ -11489,25 +11489,32 @@ a:hover {
 }
 
 .formImg {
-    height: 160vh;
+    height: 92vh;
     width: 100%;
     object-fit: cover;
 }
 
 .formDiv {
     margin: 0;
-    height: 160vh;
+    height: 92vh;
     background-color: #405546;
-    padding: 3rem 20rem;
+    padding: 3rem 5rem;
     display: flex;
     flex-direction: column;
     justify-content: left;
+}
+
+#mainForm {
+  width: 450px;
+  margin: 0 auto;
 }
 
 .topHeading {
     font-size: 3rem;
     font-weight: 300;
     margin-bottom: 2rem;
+    padding-top: 100px;
+    text-align: center;
 }
 
 .formLabel {
@@ -11519,7 +11526,7 @@ a:hover {
 }
 
 .form-control {
-    width: 70%;
+    width: 100%;
     background-color: black;
     border: none;
     height: 3.8rem;
@@ -11579,7 +11586,7 @@ a:hover {
 }
 
 .btnContainer {
-    margin: 2.2rem 0;
+    margin: 2.2rem auto;
     width: 70%;
     height: 3.5rem;
     display: flex;
@@ -11587,7 +11594,7 @@ a:hover {
     justify-content: center;
 }
 
-.signUpBtn {
+.logInBtn {
     display: block;
     margin: 0 auto;
     width: 45%;
@@ -11600,7 +11607,7 @@ a:hover {
     transition: 0.2s;
 }
 
-.signUpBtn:hover {
+.logInBtn:hover {
     background-color: #CACACA;
     box-shadow: 0 2px 15px -2px #929292;
 }

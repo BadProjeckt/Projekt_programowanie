@@ -21,7 +21,7 @@
         <div class="navbarDiv">
           <ul id="leftPart">
             <li>
-              <a
+              <a href="{% url 'class' %}"
                 ><img
                   src="{%static 'imgs&icons/patient-sign-up-page/icons8-home.svg'%}"
                   alt=""
@@ -42,7 +42,9 @@
           </div>
         </div>
         <div class="navbarDiv">
-          <button id="loginSignup">LOG IN/SIGN UP</button>
+          <form id="buttonForm" action="{% url 'class' %}">
+            <button id="loginSignup">SIGN UP</button>
+          </form>
         </div>
       </div>
     </nav>
@@ -56,7 +58,7 @@
       </div>
       <div class="col-8 container-fluid formDiv">
         <h1 class="topHeading">Create an account</h1>
-        <form>
+        <form id="userForm">
           <div class="form-group">
             <label class="formLabel" for="name">Name</label>
             <input

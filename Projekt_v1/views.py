@@ -11,9 +11,6 @@ def news_page(request):
 def forum_page(request):
     return render(request, 'forum.html',{'name': 'forum'})
 
-def login_page(request):
-    return render(request, 'forum.html',{'name': 'login'})
-
 def signup_page(request):
     return render(request, 'signup.html',{'name': 'signup'})
 
@@ -28,4 +25,7 @@ def doctor_sign_up_page(request):
 
 def clinic_sign_up_page(request):
     return render(request, 'clinic-sign-up-page.html',{'name': 'clinic'})
+
+def login_page(request):
+    return render(request, 'login-page.html',{'name': 'login'})
 

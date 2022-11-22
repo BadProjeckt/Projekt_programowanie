@@ -21,7 +21,7 @@
         <div class="navbarDiv">
           <ul id="leftPart">
             <li>
-              <a
+              <a href="{% url 'class' %}"
                 ><img
                   src="{%static 'imgs&icons/class-page/icons8-home.svg'%}"
                   alt=""
@@ -47,8 +47,8 @@
           </div>
         </div>
         <div class="navbarDiv">
-          <form id="buttonForm" action="#">
-            <button id="loginSignup">LOG IN/SIGN UP</button>
+          <form id="buttonForm" action="{% url 'login' %}">
+            <button id="loginSignup">LOG IN</button>
           </form>
         </div>
       </div>
@@ -250,7 +250,7 @@
       <div class="row">
         <div class="col-4 chooseClass">
           <h2>I AM A PATIENT</h2>
-          <a
+          <a href="{% url 'patient' %}"
             ><img
               src="{%static 'imgs&icons/class-page/patient2.jpg'%}"
               alt="Patient"
@@ -259,7 +259,7 @@
         </div>
         <div class="col-4 chooseClass">
           <h2>I AM A DOCTOR</h2>
-          <a
+          <a href="{% url 'doctor' %}"
             ><img
               src="{%static 'imgs&icons/class-page/doctor.jpg'%}"
               alt="Doctor"
@@ -268,7 +268,7 @@
         </div>
         <div class="col-4 chooseClass">
           <h2>I AM A CLINIC</h2>
-          <a
+          <a href="{% url 'clinic' %}"
             ><img
               src="{%static 'imgs&icons/class-page/clinic.jpg'%}"
               alt="Clinic"

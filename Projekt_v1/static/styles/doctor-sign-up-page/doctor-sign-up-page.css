@@ -11620,3 +11620,7 @@ a:hover {
   object-fit: cover;
   width: 2rem;
 }
+
+#buttonForm {
+  height: 100%;
+}
