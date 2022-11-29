@@ -5,9 +5,6 @@ from django.shortcuts import HttpResponse
 def landing_page(request):
     return render(request, 'home.html',{'name': 'home'})
 
-def news_page(request):
-    return render(request, 'news.html',{'name': 'news'})
-
 def forum_page(request):
     return render(request, 'forum.html',{'name': 'forum'})
 
@@ -28,4 +25,7 @@ def clinic_sign_up_page(request):
 
 def login_page(request):
     return render(request, 'login-page.html',{'name': 'login'})
+
+def news_page(request):
+    return render(request, 'news-page.html',{'name': 'news'})
 

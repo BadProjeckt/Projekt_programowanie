@@ -6,12 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Class Screen</title>
+    <link rel="stylesheet" href="{%static 'styles/news-page/news-page.css'%}" />
     <link
-      rel="stylesheet"
-      href="{%static 'styles/class-page/class-page-styles.css'%}"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -21,9 +18,9 @@
         <div class="navbarDiv">
           <ul id="leftPart">
             <li>
-              <a href="{% url 'news' %}"
+              <a href="{% url 'class' %}"
                 ><img
-                  src="{%static 'imgs&icons/class-page/icons8-home.svg'%}"
+                  src="{%static 'imgs&icons/news-page/icons8-home.svg'%}"
                   alt=""
               /></a>
             </li>
@@ -34,13 +31,13 @@
         <div class="navbarDiv">
           <div class="container-fluid inputWrapper">
             <img
-              src="{%static 'imgs&icons/class-page/icons8-search.svg'%}"
+              src="{%static 'imgs&icons/news-page/icons8-search.svg'%}"
               alt=""
               class="searchIcon"
             />
             <input type="text" id="mainInput" placeholder="Type something..." />
             <img
-              src="{%static 'imgs&icons/class-page/icons8-expand-arrow-48.png'%}"
+              src="{%static 'imgs&icons/news-page/icons8-expand-arrow-48.png'%}"
               alt=""
               id="expandArrow"
             />
@@ -243,41 +240,64 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid" id="whoAreYou">
-      <h1>WHO ARE YOU?</h1>
-    </div>
-    <div class="container-fluid" id="mainDiv">
-      <div class="row">
-        <div class="col-4 chooseClass">
-          <h2>I AM A PATIENT</h2>
-          <a href="{% url 'patient' %}"
-            ><img
-              src="{%static 'imgs&icons/class-page/patient2.jpg'%}"
-              alt="Patient"
-              class="img-fluid chooseClassImg"
-          /></a>
+    <div class="row">
+      <div class="container-fluid col-7" id="imgDiv">
+        <div class="container-fluid" id="textDiv">
+          <h1>
+            Start looking for a specialist by typing in above or <br />choose
+            from filters
+          </h1>
         </div>
-        <div class="col-4 chooseClass">
-          <h2>I AM A DOCTOR</h2>
-          <a href="{% url 'doctor' %}"
-            ><img
-              src="{%static 'imgs&icons/class-page/doctor.jpg'%}"
-              alt="Doctor"
-              class="img-fluid chooseClassImg"
-          /></a>
+        <img
+          src="{%static 'imgs&icons/news-page/image13.png'%}"
+          alt="Touching hands"
+          class="img-fluid"
+          id="handsImg"
+        />
+      </div>
+      <div class="container-fluid col-5" id="newsDiv">
+        <div class="container-fluid" id="textDiv">
+          <h1>News<br /></h1>
         </div>
-        <div class="col-4 chooseClass">
-          <h2>I AM A CLINIC</h2>
-          <a href="{% url 'clinic' %}"
-            ><img
-              src="{%static 'imgs&icons/class-page/clinic.jpg'%}"
-              alt="Clinic"
-              class="img-fluid chooseClassImg"
-          /></a>
+        <div class="container-fluid newsBox">
+          <div class="row">
+            <div class="filler col-4"></div>
+            <div class="newsTextDiv col-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum et magni ipsum iure blanditiis, velit aliquid excepturi
+              dicta voluptas molestias ullam consequatur culpa doloremque optio
+              quasi eligendi inventore tenetur quam!
+              <button class="readMoreBtn">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid newsBox">
+          <div class="row">
+            <div class="filler col-4"></div>
+            <div class="newsTextDiv col-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum et magni ipsum iure blanditiis, velit aliquid excepturi
+              dicta voluptas molestias ullam consequatur culpa doloremque optio
+              quasi eligendi inventore tenetur quam!
+              <button class="readMoreBtn">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid newsBox">
+          <div class="row">
+            <div class="filler col-4"></div>
+            <div class="newsTextDiv col-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum et magni ipsum iure blanditiis, velit aliquid excepturi
+              dicta voluptas molestias ullam consequatur culpa doloremque optio
+              quasi eligendi inventore tenetur quam!
+              <button class="readMoreBtn">Read More</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <script src="{%static 'scripts/class-page/class-page-app.js'%}"></script>
+    <script src="{%static 'scripts/news-page/news-page.js'%}"></script>
   </body>
 </html>
