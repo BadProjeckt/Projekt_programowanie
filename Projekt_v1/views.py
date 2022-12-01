@@ -29,3 +29,6 @@ def login_page(request):
 def news_page(request):
     return render(request, 'news-page.html',{'name': 'news'})
 
+def calendar_page(request):
+    return render(request, 'calendar-page.html',{'name': 'calendar'})
+
