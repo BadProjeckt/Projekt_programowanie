@@ -61,12 +61,12 @@
         <form id="mainForm" action="" method=POST>
           {% csrf_token %}
           <div class="form-group">
-            <label class="formLabel" for="email">Email address</label>
+            <label class="formLabel" for="email">Username</label>
             <input
-              type="email"
+              type="text"
               class="form-control"
-              id="email"
-              placeholder="Enter your email adress"
+              name="username"
+              placeholder="Enter your username"
             />
           </div>
           <div class="form-group">
@@ -74,7 +74,7 @@
             <input
               type="password"
               class="form-control"
-              id="password"
+              name="password"
               placeholder="Enter your password"
             />
           </div>

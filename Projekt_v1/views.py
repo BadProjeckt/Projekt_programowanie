@@ -1,5 +1,7 @@
-from django.shortcuts import render
-from django.shortcuts import HttpResponse
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login, logout
+from django.contrib import messages
+from django.contrib.auth.forms import UserCreationForm
 
 # Create your views here.
 def landing_page(request):
@@ -23,12 +25,24 @@ def doctor_sign_up_page(request):
 def clinic_sign_up_page(request):
     return render(request, 'clinic-sign-up-page.html',{'name': 'clinic'})
 
-def login_page(request):
-    return render(request, 'login-page.html',{'name': 'login'})
-
 def news_page(request):
     return render(request, 'news-page.html',{'name': 'news'})
 
 def calendar_page(request):
     return render(request, 'calendar-page.html',{'name': 'calendar'})
 
+def login_page(request):
+	if request.method == "POST":
+		username = request.POST['username']
+		password = request.POST['password']
+		user = authenticate(request, username=username, password=password)
+		if user is not None:
+			login(request, user)
+			return redirect('news')
+		else:
+			messages.success(request, ("There Was An Error Logging In, Try Again..."))	
+			return redirect('login')	
+
+
+	else:
+		return render(request, 'login-page.html', {})
