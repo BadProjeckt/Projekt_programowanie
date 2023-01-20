@@ -58,7 +58,8 @@
       </div>
       <div class="col-5 container-fluid formDiv">
         <h1 class="topHeading">Log into account</h1>
-        <form id="mainForm">
+        <form id="mainForm" action="" method=POST>
+          {% csrf_token %}
           <div class="form-group">
             <label class="formLabel" for="email">Email address</label>
             <input
@@ -78,7 +79,7 @@
             />
           </div>
           <div class="btnContainer">
-            <button class="logInBtn">LOG IN</button>
+            <input type="submit" value = "Log in" class="logInBtn">
           </div>
         </form>
       </div>
