@@ -9,25 +9,25 @@ const smallChar = document.querySelector('#passwordHelp p:nth-of-type(5)');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    if(password.value.search(/[a-z]/)<0){
+    if(password.value.search(/[a-z]/)==0){
         password.classList.add('form-control-wrong');
         smallChar.classList.add('passwordHelpActive')
     } else if (password.value.search(/[a-z]/)>0){
         smallChar.classList.remove('passwordHelpActive')
     }
-    if(password.value.search(/[A-Z]/)<0){
+    if(password.value.search(/[A-Z]/)==0){
         password.classList.add('form-control-wrong');
         capitalChar.classList.add('passwordHelpActive')
     } else if(password.value.search(/[A-Z]/)>0){
         capitalChar.classList.remove('passwordHelpActive')
     }
-    if(password.value.search(/[@#$%^&]/)<0){
+    if(password.value.search(/[@#$%^&]/)==0){
         password.classList.add('form-control-wrong');
         specialChar.classList.add('passwordHelpActive')
     } else if(password.value.search(/[@#$%^&]/)>0){
         specialChar.classList.remove('passwordHelpActive')
     }
-    if(password.value.search(/[0-9]/)<0){
+    if(password.value.search(/[0-9]/)==0){
         password.classList.add('form-control-wrong');
         number.classList.add('passwordHelpActive')
     } else if(password.value.search(/[0-9]/)>0){
