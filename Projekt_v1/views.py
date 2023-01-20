@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
-from django.contrib.auth.forms import UserCreationForm
 
 # Create your views here.
 def landing_page(request):
@@ -15,15 +14,6 @@ def signup_page(request):
 
 def class_page(request):
     return render(request, 'class-page.html',{'name': 'class'})
-
-def patient_sign_up_page(request):
-    return render(request, 'patient-sign-up-page.html',{'name': 'patient'})
-
-def doctor_sign_up_page(request):
-    return render(request, 'doctor-sign-up-page.html',{'name': 'doctor'})
-
-def clinic_sign_up_page(request):
-    return render(request, 'clinic-sign-up-page.html',{'name': 'clinic'})
 
 def news_page(request):
     return render(request, 'news-page.html',{'name': 'news'})
@@ -46,3 +36,16 @@ def login_page(request):
 
 	else:
 		return render(request, 'login-page.html', {})
+
+def logout_user(request):
+    logout (request)
+    return redirect('news')
+
+def patient_sign_up_page(request):
+    return render(request, 'patient-sign-up-page.html',{'name': 'patient'})
+
+def doctor_sign_up_page(request):
+    return render(request, 'doctor-sign-up-page.html',{'name': 'doctor'})
+
+def clinic_sign_up_page(request):
+    return render(request, 'clinic-sign-up-page.html',{'name': 'clinic'})

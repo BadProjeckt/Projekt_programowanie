@@ -47,9 +47,15 @@
           </div>
         </div>
         <div class="navbarDiv">
+          {%if user.is_authenticated%}
+          <form id="buttonForm" action="{% url 'logout' %}">
+            <button id="loginSignup">LOG OUT</button>
+          </form>
+          {%else%}
           <form id="buttonForm" action="{% url 'login' %}">
             <button id="loginSignup">LOG IN</button>
           </form>
+          {%endif%}
         </div>
       </div>
     </nav>
