@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Sign Up</title>
+    <link
+      rel="stylesheet"
+      href="{%static 'styles/doctor-sign-up-page/doctor-sign-up-page.css'%}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid" id="navbarContainer">
+        <div class="navbarDiv">
+          <ul id="leftPart">
+            <li>
+              <a href="{% url 'news' %}"
+                ><img
+                  src="{%static 'imgs&icons/doctor-sign-up-page/icons8-home.svg'%}"
+                  alt=""
+              /></a>
+            </li>
+            <li><a href="{% url 'news' %}">NEWS</a></li>
+            <li><a>FORUM</a></li>
+          </ul>
+        </div>
+        <div class="navbarDiv">
+          <div class="container-fluid inputWrapper">
+            <input type="text" id="mainInput" placeholder="Type something..." />
+            <img
+              src="{%static 'imgs&icons/doctor-sign-up-page/icons8-search.svg'%}"
+              alt=""
+              class="searchIcon"
+            />
+          </div>
+        </div>
+        <div class="navbarDiv">
+          <form id="buttonForm" action="{% url 'class' %}">
+            <button id="loginSignup">SIGN UP</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-4 container-fluid imgDiv">
+        <img
+          src="{%static 'imgs&icons/doctor-sign-up-page/flowers.jpg'%}"
+          alt=""
+          class="formImg"
+        />
+      </div>
+      <div class="col-8 container-fluid formDiv">
+        <h1 class="topHeading">Create an account</h1>
+        <form id="userForm">
+          <div class="form-group">
+            <label class="formLabel" for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="surname">Surname</label>
+            <input
+              type="text"
+              class="form-control"
+              id="surname"
+              placeholder="Enter your surname"
+            />
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="profession">Your profession</label>
+            <div class="dateContainer form-control">
+              <img
+                id="expandArrow"
+                src="{% static 'imgs&icons/doctor-sign-up-page/icons8-expand-arrow-48.png' %}"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="licenseNumber">License number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="licenseNumber"
+              placeholder="Enter your license number"
+            />
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="phoneNumber">Phone number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="phoneNumber"
+              placeholder="Enter your phone number"
+            />
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email adress"
+            />
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="email">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Enter your password"
+            />
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="confPassword">Confirm Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="confPassword"
+              placeholder="Enter your password again"
+            />
+            <small id="passwordHelp" class="form-text"
+              ><p class="mb-4">Password must contain at least:</p>
+              <p>1 special character (@#$%^&)</p>
+              <p>1 number (0123456789)</p>
+              <p>1 capital character</p>
+              <p>1 small character</p></small
+            >
+          </div>
+          <div class="btnContainer">
+            <button class="signUpBtn">SIGN UP</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="{%static 'scripts/doctor-sign-up-page/doctor-sign-up-page.js'%}"></script>
+  </body>
+</html>
