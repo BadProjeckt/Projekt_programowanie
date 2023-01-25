@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.landing_page), #nie ma 
+    path('', views.login_page), #nie ma 
     path('forum/', views.forum_page), #nie ma
     path('signup/', views.signup_page), #zbedne
     path('classpage/', views.class_page, name='class'),

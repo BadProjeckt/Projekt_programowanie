@@ -28,7 +28,7 @@ def login_page(request):
 		user = authenticate(request, username=username, password=password)
 		if user is not None:
 			login(request, user)
-			return redirect('news') #powinno byc home
+			return redirect('news')
 		else:
 			messages.success(request, ("There Was An Error Logging In, Try Again..."))	
 			return redirect('login')	
@@ -37,7 +37,7 @@ def login_page(request):
 
 def logout_user(request):
     logout (request)
-    return redirect('news')
+    return redirect('login')
 
 def patient_sign_up_page(request):
     return render(request, 'patient-sign-up-page.html',{'name': 'patient'})
