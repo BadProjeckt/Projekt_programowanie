@@ -47,3 +47,6 @@ def doctor_sign_up_page(request):
 
 def clinic_sign_up_page(request):
     return render(request, 'clinic-sign-up-page.html',{'name': 'clinic'})
+
+def forum_page(request):
+    return render(request, 'forum-page.html',{'name': 'forum'})

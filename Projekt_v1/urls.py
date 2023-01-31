@@ -12,5 +12,6 @@ urlpatterns = [
     path('login/', views.login_page, name='login'),
     path('logout_user', views.logout_user, name = 'logout'),
     path('news/', views.news_page, name='news'),
-    path('calendar/', views.calendar_page, name='calendar'), #Na tym sie poddaje
+    path('calendar/', views.calendar_page, name='calendar'),#Na tym sie poddaje
+    path('forum/', views.forum_page, name='forum'), 
 ]
